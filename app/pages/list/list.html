@@ -13,9 +13,12 @@
         <template let-item="item">
             <GridLayout columns="*, auto">
                 <Label col="0" [text]="item.name" class="medium-spacing"></Label>
-                <StackLayout col="1" class="delete-container" (tap)="delete(item)">
-                    <Image src="res://delete" class="delete-button"></Image>
-                </StackLayout>
+                <!--<StackLayout col="1" class="delete-container" (tap)="delete(item)">-->
+                    <Image src="res://delete" style="color: black" class="delete-button" (tap)="delete(item)" col="1"></Image>
+                <!--</StackLayout>-->
+                <!--<StackLayout col="1" class="delete-container" (tap)="delete(item)">-->
+                    <!--<Image src="res://delete" class="delete-button"></Image>-->
+                <!--</StackLayout>-->
             </GridLayout>
         </template>
     </ListView>

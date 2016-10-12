@@ -77,6 +77,12 @@ export class ListComponent implements OnInit {
                     var index = this.groceryList.indexOf(grocery);
                     this.groceryList.splice(index, 1);
                 });
-            });
+            },
+                (err) =>{
+                    alert({
+                        message: "This item has alreay been deleted",
+                        okButtonText: "OK"
+                    });
+                });
     }
 }

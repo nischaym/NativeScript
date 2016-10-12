@@ -1,3 +1,5 @@
+// all the routing details (config.js in angularJS1)
+
 import { LoginComponent } from "./pages/login/login.component";
 import { ListComponent } from "./pages/list/list.component";
 
